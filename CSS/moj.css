@@ -1,0 +1,47 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	height: 100vh;
+}
+
+.box {
+	position: relative;
+}
+
+.boxImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.photo {
+	position: fixed;
+	width: 500px;
+	height: 500px;
+	background-image: url(../IMG/nike-5041718_1920.jpg);
+	background-size: cover;
+	border-radius: 6px;
+	box-shadow: 5px 5px 10px black;
+	transition: scale 0.3s;
+	overflow: hidden;
+}
+
+.photo-zoom {
+	cursor: zoom-in;
+	transform: scale(2);
+}
+
+@media (max-width: 768px) {
+	.photo {
+		width: 300px;
+		height: 300px;
+	}
+}
